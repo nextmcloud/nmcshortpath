@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>nmcshortpath</id>
+	<name>NextMagentaCloud file pathes without userid</name>
+	<summary>Allow usage of NextCloud features like `dav` without userid in path</summary>
+	<description>(experimental) This app takes login information and a shortened file path without userid and extend it,
+    either by redirect or full encapsulated in a controller behind the scenes</description>
+	<version>0.1.0-nmc</version>
+	<licence>agpl</licence>
+	<author>Bernd Rederlechner</author>
+	<namespace>NextMagentaCloudShortPath</namespace>
+	<types>
+		<authentication/>
+	</types>
+	<category>experimental</category>
+	<category>integration</category>
+	<website>https://github.com/nextmcloud/nmcshortpath</website>
+	<bugs>https://jira.devops.telekom.de/projects/NMCLOUD/issues</bugs>
+	<repository>https://github.com/nextmcloud/nmcshortpath</repository>
+	<dependencies>
+		    <!-- NextMagentaCloud support must check functionality and increase max-version
+			     with each major release change. See architecture documentation for details.
+     		-->
+		<nextcloud min-version="21" max-version="22"/>
+	</dependencies>
+</info>
